@@ -21,12 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-gray);
 }
 
 .sortable {
   border: 1px solid #e6e6ea;
   border-radius: 20px;
   width: auto;
+  background-color: #fff;
 }
 
 .table_container {
@@ -110,7 +112,7 @@
 }
 
 .search_container {
-  background-color: var(--light-gray);
+  background-color: #e6e6ea;
   padding: 12px 15px;
   border-radius: 8px;
   display: flex;
@@ -118,6 +120,6 @@
 }
 
 .searchicon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }

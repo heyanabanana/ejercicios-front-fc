@@ -21,12 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-gray);
 }
 
 .sortable {
   border: 1px solid #e6e6ea;
   border-radius: 20px;
   width: auto;
+  background-color: #fff;
 }
 
 .table_container {

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #32d5a4;
+  --gray-black: #121625;
+  --light-gray: #f8f8f9;
+  --medium-gray: #a5a8b3;
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--gray-black);
+}
+
+button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--light-gray);
+}
+
+.card_container {
+  background-color: #fff;
+  border: 1px solid #e6e6ea;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.heading_alumno {
+  display: flex;
+  align-items: center;
+}
+
+.avatar_container {
+  display: flex;
+  max-width: 90px;
+  max-height: 90px;
+  overflow: hidden;
+  background-color: var(--medium-gray);
+  object-fit: contain;
+  border-radius: 20px;
+  border: 5px solid var(--light-gray);
+}
+
+.avatar_alumno {
+  object-fit: cover;
+  width: 100%;
+}
+
+.ubicacion_container {
+  display: flex;
+}
+
+.datos_alumno {
+  margin-left: 20px;
+}
+
+.nombre_alumno {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ubicacion_container {
+  display: flex;
+  align-items: center;
+}
+
+.ubicacion_icon {
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.ubicacion_texto {
+  color: var(--medium-gray);
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.form_container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.label_span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.grid_form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.label_alumno {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input_alumno {
+  border: none;
+  background-color: var(--light-gray);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 12px 0px;
+  color: var(--gray-black);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.file_upload {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+label[for="file"] {
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  background-color: var(--medium-gray);
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 5px 14px 5px 10px;
+  width: fit-content;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.iconupload {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.input_file {
+  display: flex;
+}
+
+.icontrash {
+  width: 20px;
+  height: 20;
+  margin-right: 10px;
+}
+
+.remove_file {
+  background: none;
+  border: 1px solid var(--light-gray);
+  padding: 5px 14px 5px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--gray-black);
+}
+
+.tags_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.search_tags {
+  display: flex;
+  align-items: center;
+}
+
+.input_alumno_tags {
+  border: none;
+  background-color: var(--light-gray);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 12px 0px;
+  color: var(--medium-gray);
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+}
+
+.tag {
+  background: #e6e6ea;
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 3px 6px 3px 10px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.tags_contain {
+  display: flex;
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+
+.closeicon {
+  margin-left: 5px;
+}
+
+/* TAGS INPUT */
+.value_select {
+  text-transform: uppercase;
+}
