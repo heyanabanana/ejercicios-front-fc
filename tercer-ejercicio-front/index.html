@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabla FC</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table_container">
+        <div class="heading_container">
+          <h1 class="page_title">Alumnos</h1>
+          <span class="search_container">
+            <img
+              src="./assets/iconmonstr-search-thin.svg"
+              alt="Filtrar"
+              class="searchicon" />
+            <input
+              onkeyup="doSearch()"
+              class="search_bar"
+              id="searchTerm"
+              type="text"
+              placeholder="Buscar por nombre, Email o Palabra clave..."
+          /></span>
+        </div>
+        <table class="sortable" id="tableSearch">
+          <thead>
+            <tr class="table_heading_container">
+              <th class="table_heading">
+                NOMBRE
+
+                <img
+                  src="./assets/arrows_sort_icon_151591.svg"
+                  alt="Filtrar"
+                  class="sorticon"
+                />
+              </th>
+              <th class="table_heading">
+                CIUDAD
+                <img
+                  src="./assets/arrows_sort_icon_151591.svg"
+                  alt="Filtrar"
+                  class="sorticon"
+                />
+              </th>
+              <th class="table_heading">
+                PAÍS
+                <img
+                  src="./assets/arrows_sort_icon_151591.svg"
+                  alt="Filtrar"
+                  class="sorticon"
+                />
+              </th>
+              <th class="table_heading no-sort">TELEFONO</th>
+              <th class="table_heading">
+                CORREO ELECTRONICO
+                <img
+                  src="./assets/arrows_sort_icon_151591.svg"
+                  alt="Filtrar"
+                  class="sorticon"
+                />
+              </th>
+              <th class="table_heading">
+                ETIQUETAS
+                <img
+                  src="./assets/arrows_sort_icon_151591.svg"
+                  alt="Filtrar"
+                  class="sorticon"
+                />
+              </th>
+            </tr>
+          </thead>
+
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

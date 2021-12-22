@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #32d5a4;
+  --gray-black: #121625;
+  --light-gray: #f8f8f9;
+  --medium-gray: #a5a8b3;
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--gray-black);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortable {
+  border: 1px solid #e6e6ea;
+  border-radius: 20px;
+  width: auto;
+}
+
+.table_container {
+  margin: 20px;
+  width: auto;
+  overflow-x: auto;
+}
+
+.table_heading {
+  color: var(--medium-gray);
+  font-weight: bold;
+  font-size: 12px;
+  align-items: center;
+  line-height: 13px;
+  min-width: 200px;
+  cursor: pointer;
+  text-align: left;
+  padding: 15px;
+  margin: 2px;
+}
+
+.sorticon {
+  background-color: transparent;
+  border: none;
+  color: var(--medium-gray);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.table_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alumns_data {
+  color: var(--gray-black);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 20px;
+  border-top: 1px solid #e6e6ea;
+}
+
+.tag {
+  list-style: none;
+
+  width: fit-content;
+  background-color: var(--primary);
+  padding: 6px;
+  border-radius: 6px;
+  margin: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.tag_container {
+  display: flex;
+}
