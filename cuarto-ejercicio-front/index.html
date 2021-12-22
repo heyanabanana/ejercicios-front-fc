@@ -103,7 +103,13 @@
             </span>
             <span class="label_span">
               <span class="input_file">
-                <label for="file">Subir de nuevo</label>
+                <label for="file"
+                  ><img
+                    src="./assets/iconmonstr-upload-17.svg"
+                    alt=""
+                    class="iconupload"
+                  />Subir de nuevo</label
+                >
 
                 <input type="file" class="file_upload" id="file" />
 
@@ -116,43 +122,49 @@
                 </button></span
               >
             </span>
+            <span class="tags_container">
+              <label for="tags" class="label_alumno">Etiquetas</label>
+              <span class="search_tags">
+                <select class="input_tags input_alumno_tags">
+                  <option
+                    value="default"
+                    selected
+                    disabled
+                    class="value_select"
+                  >
+                    Escribe para buscar...
+                  </option>
 
-            <label for="tags" class="label_alumno">Etiquetas</label>
-            <span class="search_tags">
-              <input
-                type="text"
-                class="input_tags"
-                placeholder="Escribe para buscar..."
-              />
-              <img
-                src="./assets/iconmonstr-arrow-65.svg"
-                alt=""
-                class="iconarrow"
-              />
-            </span>
-            <span class="tag_container">
-              <span class="tag"
-                ><p class="tag_text">HTML&CSS</p>
-                <img
-                  src="./assets/iconmonstr-x-mark-1.svg"
-                  alt=""
-                  class="closeicon"
-              /></span>
-              <span class="tag"
-                ><p class="tag_text">REACT</p>
-                <img
-                  src="./assets/iconmonstr-x-mark-1.svg"
-                  alt=""
-                  class="closeicon"
-              /></span>
-              <span class="tag"
-                ><p class="tag_text">ANGULAR</p>
-                <img
-                  src="./assets/iconmonstr-x-mark-1.svg"
-                  alt=""
-                  class="closeicon"
-              /></span>
-            </span>
+                  <option value="react" class="value_select">React</option>
+                  <option value="html&css" class="value_select">
+                    HTML&CSS
+                  </option>
+                  <option value="angular" class="value_select">ANGULAR</option>
+                </select>
+              </span>
+              <span class="tags_contain">
+                <span class="tag"
+                  ><p class="tag_text">HTML&CSS</p>
+                  <img
+                    src="./assets/iconmonstr-x-mark-1.svg"
+                    alt=""
+                    class="closeicon"
+                /></span>
+                <span class="tag"
+                  ><p class="tag_text">REACT</p>
+                  <img
+                    src="./assets/iconmonstr-x-mark-1.svg"
+                    alt=""
+                    class="closeicon"
+                /></span>
+                <span class="tag"
+                  ><p class="tag_text">ANGULAR</p>
+                  <img
+                    src="./assets/iconmonstr-x-mark-1.svg"
+                    alt=""
+                    class="closeicon"
+                /></span> </span
+            ></span>
           </form>
         </div>
       </div>
