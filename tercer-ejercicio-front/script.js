@@ -151,7 +151,6 @@ console.log(alumns);
 
 window.onload = function populateTable() {
   let table = "";
-  //   let [skills] = alumns[i].skills;
   for (let i in alumns) {
     table += "<tr>";
     (table +=
