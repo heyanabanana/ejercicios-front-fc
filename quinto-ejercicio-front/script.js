@@ -61,19 +61,15 @@ function tagsChange(evt) {
   const input = evt.target,
     idDatalist = input.getAttribute("list");
 
-  //obtener el datalist que le corresponde
+  //datalist que le corresponde
   let datalist;
   if (idDatalist && (datalist = document.getElementById(idDatalist))) {
-    //obtener la opcion seleccionada
+    //opcion seleccionada
 
     let opcionSel = datalist.querySelector(`option[value="${input.value}" i]`);
     if (opcionSel) {
-      //obtener el data-id de esa opcion
-      let idTag = opcionSel.dataset.id;
-
-      //acá está el valor
+      //valor
       addTags(input.value);
-      console.log("value =", input.value);
     }
   }
 }
