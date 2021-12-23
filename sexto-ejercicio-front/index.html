@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card_container">
+        <div class="heading_alumno">
+          <span class="avatar_container">
+            <img
+              src="./assets/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              alt="Avatar alumno"
+              class="avatar_alumno"
+          /></span>
+          <span class="datos_alumno">
+            <h1 class="nombre_alumno">Nombre Alumno</h1>
+            <span class="ubicacion_container">
+              <img
+                src="./assets/iconmonstr-location-pin-thin.svg"
+                alt="Ubicacion"
+                class="ubicacion_icon"
+              />
+              <p class="ubicacion_texto">Valencia</p>
+              <p class="ubicacion_texto">|</p>
+              <p class="ubicacion_texto">España</p>
+            </span>
+          </span>
+        </div>
+        <div class="form_container">
+          <form action="#" class="alumno_form">
+            <span class="label_span">
+              <label for="nombre" class="label_alumno"
+                >Nombre y apellidos</label
+              >
+              <input
+                type="text"
+                class="input_alumno"
+                name="nombre"
+                value="Nombre Alumno"
+              />
+            </span>
+            <span class="grid_form">
+              <span class="label_span">
+                <label for="telefono" class="label_alumno">Nº Teléfono</label>
+                <input
+                  type="text"
+                  class="input_alumno"
+                  name="telefono"
+                  value="+34 654 85 52 48"
+              /></span>
+              <span class="label_span">
+                <label for="email" class="label_alumno">Email</label>
+                <input
+                  type="text"
+                  class="input_alumno"
+                  name="email"
+                  value="hcliment@gmail.com"
+              /></span>
+              <span class="label_span">
+                <label for="pais" class="label_alumno">País</label>
+                <select class="input_alumno" name="pais">
+                  <option value="spain" selected class="value_select">
+                    España
+                  </option>
+                  <option value="argentina" class="value_select">
+                    Argentina
+                  </option>
+                </select>
+              </span>
+              <span class="label_span">
+                <label for="ciudad" class="label_alumno">Ciudad</label>
+                <select class="input_alumno" name="ciudad">
+                  <option value="madrid" class="value_select">Madrid</option>
+                  <option value="gijon" selected class="value_select">
+                    Gijón
+                  </option>
+                  <option value="valencia" class="value_select">
+                    Valencia
+                  </option>
+                </select>
+              </span>
+              <span class="label_span">
+                <label for="traslado" class="label_alumno">Traslado</label>
+                <select class="input_alumno" name="traslado">
+                  <option value="si" class="value_select">Si</option>
+                  <option value="no" selected class="value_select">No</option>
+                </select>
+              </span>
+              <span class="label_span">
+                <label for="remoto" class="label_alumno">Presencialidad</label>
+                <select class="input_alumno" name="remoto">
+                  <option value="si" class="value_select">Presencial</option>
+                  <option value="no" selected class="value_select">
+                    En remoto
+                  </option>
+                </select>
+              </span>
+            </span>
+            <span class="label_span">
+              <span class="input_file">
+                <label for="file"
+                  ><img
+                    src="./assets/iconmonstr-upload-17.svg"
+                    alt=""
+                    class="iconupload"
+                  />Subir de nuevo</label
+                >
+
+                <input type="file" class="file_upload" id="file" />
+
+                <button class="remove_file">
+                  <img
+                    src="./assets/iconmonstr-trash-can-28.svg"
+                    alt=""
+                    class="icontrash"
+                  />Borrar
+                </button></span
+              >
+            </span>
+            <span class="tags_container">
+              <input
+                list="datalist"
+                class="input_tags input_alumno_tags"
+                placeholder="Escribe para buscar..."
+                id="inputTagSearch"
+                autocomplete="on" />
+              <datalist id="datalist" class="input_tags input_alumno_tags">
+              </datalist>
+
+              <div id="wrappertags"></div>
+              <ul class="tags_contain" id="taglist"></ul
+            ></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="pdf_container">
+        <object
+          data="./CurriculumVitaeES.pdf"
+          type="application/pdf"
+          width="500"
+          height="678"
+        >
+          <iframe src="./CurriculumVitaeES.pdf" width="500" height="678">
+            <p>This browser does not support PDF!</p>
+          </iframe>
+        </object>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
